@@ -1,0 +1,6 @@
+<svg width="330" height="120" viewBox="253 85 332 120" xmlns="http://www.w3.org/2000/svg">
+  <text x="400" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="120" font-weight="700">
+    <tspan fill="#2563eb">V</tspan><tspan fill="#ffffff">Pay</tspan>
+  </text>
+  <rect x="255" y="195" width="290" height="8" rx="4" fill="#2563eb"/>
+</svg>
