@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleHandler = () => setToggleNav((prev) => !prev);
   const activeHandler = (id) => setActive(id);
   return (
-    <div className={` w-full ${styles.flexBetween} py-6 `}>
+    <div className={` w-full ${styles.flexBetween} py-6 fixed `}>
       {/* logo */}
       <div className={`${styles.heading}`}>
         <img

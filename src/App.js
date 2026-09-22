@@ -7,8 +7,12 @@ const App = () => {
     <div className="w-full bg-primary overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.container}`}>
-          <Navbar/>
-          <Home/>
+          <Navbar />
+        </div>
+      </div>
+      <div className={`${styles.flexCenter}`}>
+        <div className={`${styles.container}`}>
+          <Home />
         </div>
       </div>
     </div>
