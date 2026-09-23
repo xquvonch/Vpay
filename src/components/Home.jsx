@@ -1,17 +1,17 @@
 import React from "react";
 import { styles } from "../util/style";
-import { discount, robot } from "../assets";
+import { discount, robot, robot1 } from "../assets";
 import Button from "./Button";
 
 const Home = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row flex-col ${styles.paddingY} overflow-hidden`}
     >
       <div className={`${styles.flexStart} flex-1 md:my-0 my-10 `}>
         <img
-          src={robot}
+          src={robot1}
           alt="Robot"
           className="w-[100%] h-[100%] relative z-10 rounded-lg"
         />
@@ -46,7 +46,7 @@ const Home = () => {
         </p>
 
 {/* Getting started */}
-<Button/>
+<Button styles={`mt-5`}/>
     {/* Gradientbackground */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" />

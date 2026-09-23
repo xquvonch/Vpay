@@ -8,9 +8,9 @@ const Navbar = () => {
   const toggleHandler = () => setToggleNav((prev) => !prev);
   const activeHandler = (id) => setActive(id);
   return (
-    <div className={` w-full ${styles.flexBetween} py-6 fixed `}>
+    <div className={` w-full ${styles.flexBetween} py-6 fixed top-0 left-0 z-20 z-10000`}>
       {/* logo */}
-      <div className={`${styles.heading}`}>
+      <div className={`${styles.heading1}`}>
         <img
           src={logo}
           alt="logo"
@@ -19,7 +19,7 @@ const Navbar = () => {
       </div>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {/* Navigation link */}
-        {navigationLinks.map((item, key, navigationLinks) => {
+        {navigationLinks.map((item, key) => {
           return (
             <li
               key={item.id}
