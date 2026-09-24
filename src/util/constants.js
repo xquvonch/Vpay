@@ -1,3 +1,5 @@
+import { send, shield, star } from "../assets"
+
 export const navigationLinks=[
     {
         id:'home',
@@ -34,5 +36,25 @@ export const navigationLinks=[
         id:3,
         title:'Tranzaksiya',
         value:'110M+'
+    }
+]
+
+export const features=[
+    {
+        id:1,
+        icon:star,
+        title:"Mukofotlar",
+        content:"Eng yaxshi kredit kartalarni aksiyalar va sovrinlarning ajoyib kombinatsiyasini taklif qiladi."
+    },
+    {
+        id:2,
+        icon:shield,
+        title:'100% Himoyalangan',
+        content:"Ma'lumotlaringiz va tranzaktsiyalaringiz xavfsiz ekanligiga ishonch hosil qilish uchun faol choralarni ko'radi"
+    },
+    {
+        id:3,
+        icon:send,
+        content:`Balansni o'tkazish kredit kartasi sizga foizlarni to'lashda ko'p pul tejash imkonini beradi.`
     }
 ]

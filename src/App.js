@@ -1,5 +1,6 @@
 import { styles } from "./util/style";
-import { Navbar, Home, Statistics, Contract } from "./components";
+import { Navbar, Home, Statistics, Contract, Billing } from "./components";
+import Business from "./components/Business";
 
 const App = () => {
   return (
@@ -18,10 +19,15 @@ const App = () => {
         </div>
       </div>
 
-      <div className={` bg-primary ${styles.flexCenter}`}>
+      <div className={` bg-primary ${styles.flexCenter} ${styles.paddingX} `}>
         <div className={`${styles.container}`}>
           <Statistics />
-          <Contract/>
+          <Contract />
+          <Billing/>
+          <Business/>
+          {/* Bussines */}
+          {/* Cta */}
+          {/* footer */}
         </div>
       </div>
     </div>

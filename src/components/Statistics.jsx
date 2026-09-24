@@ -4,7 +4,7 @@ import { statistics } from "../util/constants";
 
 const Statistics = () => {
   return (
-    <div className={`${styles.flexStart} flex-row flex-wrap sm:mb-20 mb-6`}>
+    <div className={`${styles.flexStart} flex-row flex-wrap`}>
       {statistics.map((item) => (
         <div
           key={item.id}

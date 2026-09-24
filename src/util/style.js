@@ -16,11 +16,10 @@ export const styles = {
     "font-montserrat font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
 };
 
-
-export const layout={
-  section:`flex md:flex-row flex-column ${styles.paddingY}`,
-  sectionInfo:`flex-1 ${styles.flexStart} flex-col`,
-  sectionImage:`flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 relative `,
-  sectionImageReverse:`flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-10 md-0  relative `,
-
-}
+export const layout = {
+  section: `flex md:flex-row flex-col ${styles.paddingY}`,
+  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY} sm:py-16 py-6`,
+  sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+  sectionImage: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 relative `,
+  sectionImageReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-10 md-0  relative `,
+};

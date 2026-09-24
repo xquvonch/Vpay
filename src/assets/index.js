@@ -5,4 +5,11 @@ import close from './close.svg'
 import discount from './discount.svg'
 import robot from './robot-removebg-preview.png'
 import robot1 from './0080d315-06f3-4d78-af9e-5bcee1912905_removalai_preview.png'
-export {logo,menu,close, discount,robot,robot1}
+import card from './What_is_Data_Analysis.avif'
+import bill from './bill.jpg'
+import apple from './apple.svg'
+import googlePlay from './google.svg'
+import star from './star.svg'
+import send from './send.svg'
+import shield from './shield.svg'
+export {logo,menu,close, discount,robot,robot1,card, bill,apple,googlePlay,star,send,shield}
