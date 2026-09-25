@@ -3,6 +3,16 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -23,7 +33,7 @@
 }
 
 .bg-black-gradient {
-  background: linear-gradient(to top, #fff -278%, #6d6d6d -78%, #11101d 100%);
+  background: linear-gradient(to top, #ffffff -278%, #6d6d6d -78%, #11101d 100%);
 }
 .bg-discount-gradient {
   background: linear-gradient(130deg, #272727 0%, #11101d 100%);
@@ -68,4 +78,18 @@
     #5ce1e6 51.94%,
     #33bbcf 90.29%
   );
+}
+
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.box-shadow{
+  box-shadow: 0px 20px 100px -10px rgba(66,71,91,0.1);
+}
+
+.bg-dark-gradient{
+  background: linear-gradient(-168.39deg , #ffffff -278.56% , #6d6d6d -78.47% , #11101d 91.61%);
 }

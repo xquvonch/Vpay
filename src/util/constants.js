@@ -6,7 +6,7 @@ export const navigationLinks=[
         title:"Bosh sahifa"
     },
     {
-        id:"feautes",
+        id:"features",
         title:"Xizmatlar"
     },
     {

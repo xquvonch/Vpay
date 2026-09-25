@@ -1,5 +1,13 @@
 import { styles } from "./util/style";
-import { Navbar, Home, Statistics, Contract, Billing } from "./components";
+import {
+  Navbar,
+  Home,
+  Statistics,
+  Contract,
+  Billing,
+  CTA,
+  Testimonials,
+} from "./components";
 import Business from "./components/Business";
 
 const App = () => {
@@ -23,10 +31,11 @@ const App = () => {
         <div className={`${styles.container}`}>
           <Statistics />
           <Contract />
-          <Billing/>
-          <Business/>
-          {/* Bussines */}
-          {/* Cta */}
+          <Billing />
+          <Business />
+          <Testimonials />
+
+          <CTA />
           {/* footer */}
         </div>
       </div>

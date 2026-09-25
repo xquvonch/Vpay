@@ -8,7 +8,9 @@ const Navbar = () => {
   const toggleHandler = () => setToggleNav((prev) => !prev);
   const activeHandler = (id) => setActive(id);
   return (
-    <div className={` w-full ${styles.flexBetween} sm:px-16 px-6 py-6 fixed top-0 left-0 z-20 z-10000`}>
+    <div
+      className={` w-full ${styles.flexBetween} sm:px-16 px-6 py-6 fixed top-0 left-0 z-20 z-10000`}
+    >
       {/* logo */}
       <div className={`${styles.heading1}`}>
         <img
@@ -22,14 +24,15 @@ const Navbar = () => {
         {navigationLinks.map((item, key) => {
           return (
             <li
+              href={`#${item.id}`}
               key={item.id}
               className={`whitespace-nowrap font-montserrat font-normal cursor-pointer text-[16px] text-lightWhite 
                 ${key === navigationLinks.length - 1 ? "mr-0" : "mr-10"}
                      ${active === item.id ? "text-white" : "text-lightWhite"}
                  hover:text-white transition-all duration-500 `}
-                 onClick={()=>activeHandler(item.id)}
+              onClick={() => activeHandler(item.id)}
             >
-              {item.title}
+              <a href={`#${item.id}`}>{item.title}</a>
             </li>
           );
         })}
@@ -54,11 +57,11 @@ const Navbar = () => {
               return (
                 <li
                   key={item.id}
-              className={`whitespace-nowrap font-montserrat font-normal cursor-pointer text-[16px] text-lightWhite 
+                  className={`whitespace-nowrap font-montserrat font-normal cursor-pointer text-[16px] text-lightWhite 
                 ${key === navigationLinks.length - 1 ? "mr-0" : "mr-10"}
                      ${active === item.id ? "text-white" : "text-lightWhite"}
                  hover:text-white transition-all duration-500 `}
-                 onClick={()=>activeHandler(item.id)}
+                  onClick={() => activeHandler(item.id)}
                 >
                   {item.title}
                 </li>
