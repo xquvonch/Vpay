@@ -8,3 +8,4 @@ export { default as Billing } from "./Billing.jsx";
 export { default as Bussines } from "./Business.jsx";
 export { default as CTA } from "./CTA.jsx";
 export {default as Testimonials} from './Testimonials.jsx'
+export {default as Client} from './Client.jsx'

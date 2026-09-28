@@ -12,4 +12,5 @@ import googlePlay from './google.svg'
 import star from './star.svg'
 import send from './send.svg'
 import shield from './shield.svg'
-export {logo,menu,close, discount,robot,robot1,card, bill,apple,googlePlay,star,send,shield}
+import quotes from './quotes.svg'
+export {logo,menu,close, discount,robot,robot1,card, bill,apple,googlePlay,star,send,shield,quotes}

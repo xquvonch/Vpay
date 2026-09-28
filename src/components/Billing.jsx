@@ -4,7 +4,7 @@ import { apple, bill, googlePlay } from "../assets";
 
 const Billing = () => {
   return (
-    <section id="product" className={`${layout.sectionReverse}`}>
+    <section id="products" className={`${layout.sectionReverse}`}>
       <div className={layout.sectionImageReverse}>
         <img
           src={bill}
@@ -30,12 +30,12 @@ const Billing = () => {
           <img
             src={apple}
             alt="apple"
-            className="w-[200px] h-[42px] object-contain  cursor-pointer"
+            className="w-[200px] h-[50px] object-contain  cursor-pointer"
           />
           <img
             src={googlePlay}
             alt="googlePlay"
-            className="w-[200px] h-[420px] object-contain cursor-pointer"
+            className="w-[200px] h-[50px] object-contain cursor-pointer"
           />
         </div>
       </div>
