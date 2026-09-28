@@ -13,4 +13,12 @@ import star from './star.svg'
 import send from './send.svg'
 import shield from './shield.svg'
 import quotes from './quotes.svg'
-export {logo,menu,close, discount,robot,robot1,card, bill,apple,googlePlay,star,send,shield,quotes}
+import airbnb from './airbnb.jpg'
+import binance from './binance.png'
+import coinbase from './coinbase.jpg'
+import dropbox from './dropbox.jpg'
+import instagram from './instagram.svg'
+import linkedin from './linkedin.svg'
+import twitter from './twitter.svg'
+import facebook from './facebook.svg'
+export {logo,menu,close, discount,robot,robot1,card, bill,apple,googlePlay,star,send,shield,quotes, airbnb,coinbase,dropbox,binance, instagram, twitter,facebook,linkedin}
