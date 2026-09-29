@@ -5,7 +5,7 @@ import ClientCard from './ClientCard'
 
 const Client = () => {
   return (
-    <div className={`${styles.flexCenter} my-4`}>
+    <div id='clients' className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}>
       {clients.map(client=>(
         <ClientCard key={client.id} logo={client.logo}/>

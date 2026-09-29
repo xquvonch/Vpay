@@ -3,10 +3,13 @@ import {
   binance,
   coinbase,
   dropbox,
+  facebook,
   instagram,
+  linkedin,
   send,
   shield,
   star,
+  twitter,
 } from "../assets";
 
 export const navigationLinks = [
@@ -15,12 +18,12 @@ export const navigationLinks = [
     title: "Bosh sahifa",
   },
   {
-    id: "features",
-    title: "Xizmatlar",
-  },
-  {
     id: "products",
     title: "Mahsulotlar",
+  },
+  {
+    id: "features",
+    title: "Xizmatlar",
   },
   {
     id: "clients",
@@ -242,12 +245,25 @@ export const footerLinks = [
   },
 ];
 
-
-
-export const socialMedia=[
-    {
-        id:'social-media-1',
-        icon:instagram,
-        link:''
-    }
-]
+export const socialMedia = [
+  {
+    id: "social-media-1",
+    icon: instagram,
+    link: "https://www.com.instagram.com/",
+  },
+  {
+    id: "social-media-2",
+    icon: facebook,
+    link: "https://www.com.facebook.com/",
+  },
+  {
+    id: "social-media-3",
+    icon: twitter,
+    link: "https://www.com.twitter.com/",
+  },
+  {
+    id: "social-media-4",
+    icon: linkedin,
+    link: "https://www.com.linkedin.com/",
+  },
+];

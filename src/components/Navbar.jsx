@@ -13,11 +13,13 @@ const Navbar = () => {
     >
       {/* logo */}
       <div className={`${styles.heading1}`}>
-        <img
-          src={logo}
-          alt="logo"
-          className="w-[140px] h-[35px] cursor-pointer"
-        />
+        <a href="/">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[140px] h-[35px] cursor-pointer"
+          />
+        </a>
       </div>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {/* Navigation link */}
@@ -63,7 +65,7 @@ const Navbar = () => {
                  hover:text-white transition-all duration-500 `}
                   onClick={() => activeHandler(item.id)}
                 >
-                  {item.title}
+                  <a href={`#${item.id}`}>{item.title}</a>
                 </li>
               );
             })}

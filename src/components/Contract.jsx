@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Contract = () => {
   return (
-    <section className={` ${layout.section}`}>
+    <section  id='products' className={` ${layout.section}`}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
           {" "}
