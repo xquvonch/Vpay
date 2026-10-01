@@ -9,6 +9,7 @@ import {
   Testimonials,
   Client,
   Footer,
+  
 } from "./components";
 import Business from "./components/Business";
 
@@ -34,9 +35,9 @@ const App = () => {
           <Statistics />
           <Contract />
           <Billing />
-          <Business />
+          <Business/>
           <Testimonials />
-          <Client/>``
+          <Client/>
           <CTA />
           <Footer/>
         </div>

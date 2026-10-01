@@ -32,6 +32,26 @@
   }
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background: '#00040f';
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 .bg-black-gradient {
   background: linear-gradient(to top, #ffffff -278%, #6d6d6d -78%, #11101d 100%);
 }

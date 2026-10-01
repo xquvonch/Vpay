@@ -1,15 +1,31 @@
 import { styles } from "../util/style";
 import { navigationLinks } from "../util/constants";
 import { close, logo, menu } from "../assets";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import NavLink from "./NavLink";
 const Navbar = () => {
   const [toggleNav, setToggleNav] = useState(true);
   const [active, setActive] = useState("home");
   const toggleHandler = () => setToggleNav((prev) => !prev);
   const activeHandler = (id) => setActive(id);
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY);
+
+      setScrolled(window.scrollY > 50);
+    };
+
+    handleScroll(); // sahifa yuklanganda ham tekshirib olish
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div
-      className={` w-full ${styles.flexBetween} sm:px-16 px-6 py-6 fixed top-0 left-0 z-20 z-10000`}
+      className={`navbar w-full ${styles.flexBetween} sm:px-16 px-6 py-6 fixed top-0 left-0 z-20 z-10000  ${scrolled ? "scrolled" : ""}`}
     >
       {/* logo */}
       <div className={`${styles.heading1}`}>
@@ -23,19 +39,15 @@ const Navbar = () => {
       </div>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {/* Navigation link */}
-        {navigationLinks.map((item, key) => {
+        {navigationLinks.map((navLink, key, navigationLinks) => {
           return (
-            <li
-              href={`#${item.id}`}
-              key={item.id}
-              className={`whitespace-nowrap font-montserrat font-normal cursor-pointer text-[16px] text-lightWhite 
-                ${key === navigationLinks.length - 1 ? "mr-0" : "mr-10"}
-                     ${active === item.id ? "text-white" : "text-lightWhite"}
-                 hover:text-white transition-all duration-500 `}
-              onClick={() => activeHandler(item.id)}
-            >
-              <a href={`#${item.id}`}>{item.title}</a>
-            </li>
+            <NavLink
+              navLink={navLink}
+              key={key}
+              navigationLinks={navigationLinks}
+              activeHandler={activeHandler}
+              active={active}
+            />
           );
         })}
       </ul>
@@ -55,18 +67,15 @@ const Navbar = () => {
         >
           <ul className="list-none flex justify-center items-center flex-1">
             {/* Navigation link */}
-            {navigationLinks.map((item, key, navigationLinks) => {
+            {navigationLinks.map((navLink, key, navigationLinks) => {
               return (
-                <li
-                  key={item.id}
-                  className={`whitespace-nowrap font-montserrat font-normal cursor-pointer text-[16px] text-lightWhite 
-                ${key === navigationLinks.length - 1 ? "mr-0" : "mr-10"}
-                     ${active === item.id ? "text-white" : "text-lightWhite"}
-                 hover:text-white transition-all duration-500 `}
-                  onClick={() => activeHandler(item.id)}
-                >
-                  <a href={`#${item.id}`}>{item.title}</a>
-                </li>
+                <NavLink
+                  navLink={navLink}
+                  key={key}
+                  navigationLinks={navigationLinks}
+                  activeHandler={activeHandler}
+                  active={active}
+                />
               );
             })}
           </ul>

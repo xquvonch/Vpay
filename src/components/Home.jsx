@@ -1,8 +1,7 @@
 import React from "react";
 import { styles } from "../util/style";
-import { discount, robot, robot1 } from "../assets";
+import { discount, robot } from "../assets";
 import Button from "./Button";
-import Billing from "./Billing";
 
 const Home = () => {
   return (
@@ -12,7 +11,7 @@ const Home = () => {
     >
       <div className={`${styles.flexStart} flex-1 md:my-0 my-10 `}>
         <img
-          src={robot1}
+          src={robot}
           alt="Robot"
           className="w-[100%] h-[100%] relative z-10 rounded-lg"
         />
@@ -26,8 +25,8 @@ const Home = () => {
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph}`}>
             {" "}
-            <span className="text-white">1 oylik</span> hisob uchun{" "}
             <span className="text-white"> 20%</span> chegirma{" "}
+            <span className="text-white">1 oylik</span> hisob uchun{" "}
           </p>
         </div>
         {/* Title */}
