@@ -1,9 +1,11 @@
 import {
   airbnb,
+  apple,
   binance,
   coinbase,
   dropbox,
   facebook,
+  googlePlay,
   instagram,
   linkedin,
   send,
@@ -267,3 +269,14 @@ export const socialMedia = [
     link: "https://www.com.linkedin.com/",
   },
 ];
+
+export const AppStores=[
+  {
+    name:'apple',
+    img:apple
+  },
+  {
+    name:"googlePlay",
+    img:googlePlay
+  }
+]

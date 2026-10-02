@@ -37,7 +37,7 @@ const Footer = () => {
                     key={item.name}
                     className={`font-montserrat font-normal text-[16px] leading-[24px] text-lightWhite hover:text-secondary cursor-pointer ${idx !== link.links.length - 1 ? "mb-4" : "mb-0"}`}
                   >
-                    {item.name}
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">{item.name}</a>
                   </li>
                 ))}
               </ul>

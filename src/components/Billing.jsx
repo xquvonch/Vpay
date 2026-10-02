@@ -1,6 +1,7 @@
 import React from "react";
 import { layout, styles } from "../util/style";
 import { apple, bill, googlePlay } from "../assets";
+import { AppStores } from "../util/constants";
 
 const Billing = () => {
   return (
@@ -27,16 +28,16 @@ const Billing = () => {
         </p>
 
         <div className="flex flex-row flex-wrap sm:mt-10 mt-6 gap-[10px]">
-          <img
-            src={apple}
-            alt="apple"
-            className="w-[200px] h-[50px] object-contain  cursor-pointer"
-          />
-          <img
-            src={googlePlay}
-            alt="googlePlay"
-            className="w-[200px] h-[50px] object-contain cursor-pointer"
-          />
+        {AppStores.map((item)=>(
+            <div className={`w-[240px] h-[64px] rounded-full ${styles.flexCenter} bg-lightBlue`}>
+            <img
+              src={item.img}
+              alt={item.name}
+              className="w-[200px] h-[50px] object-contain  cursor-pointer"
+            />
+          </div>
+        ))}
+          
         </div>
       </div>
     </section>
