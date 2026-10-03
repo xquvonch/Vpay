@@ -266,7 +266,7 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.com.linkedin.com/",
+    link: "https://www.linkedin.com/in/quvonch-xurramov-0a0834377/",
   },
 ];
 

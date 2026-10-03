@@ -14,3 +14,4 @@ export {default as Footer } from './Footer.jsx'
 export {default as socialMedia} from './SocialMedia.jsx'
 export {default as NavLink} from './NavLink.jsx'
 export {default as SocialMedia} from './SocialMedia.jsx'
+export {default as footerLinks} from "./FooterLinks.jsx"
